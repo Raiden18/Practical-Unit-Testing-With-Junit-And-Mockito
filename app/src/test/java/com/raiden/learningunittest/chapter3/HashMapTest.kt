@@ -24,7 +24,14 @@ class HashMapTest {
     }
 
     @Test
-    fun `hash map must return value`() {
+    fun `hashMap must return value`() {
         assertEquals(VALUE, hashMap[KEY])
+    }
+
+    @Test
+    fun  `hashMap must replace value`(){
+        val newValue = "NEW VALUE"
+        hashMap[KEY] = newValue
+        assertEquals(newValue, hashMap[KEY])
     }
 }
