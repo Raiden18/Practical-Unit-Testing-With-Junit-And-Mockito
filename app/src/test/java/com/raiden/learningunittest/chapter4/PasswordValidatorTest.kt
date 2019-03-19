@@ -9,11 +9,7 @@ import org.junit.runner.RunWith
 
 @RunWith(JUnitParamsRunner::class)
 class PasswordValidatorTest {
-    lateinit var passwordValidator: PasswordValidator
-    @Before
-    fun setUp() {
-        passwordValidator = PasswordValidator()
-    }
+    var passwordValidator = PasswordValidator()
 
     fun getPasswordsWithRightLength() = arrayOf("qweqweqweqweqwe", "qweqweqwe", "1ффывфывфывфыв", "123asasdasd1d")
 
