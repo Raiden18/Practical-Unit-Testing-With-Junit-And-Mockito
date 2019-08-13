@@ -22,6 +22,5 @@ class OperatingSystemTest {
             releaseYear = 2013
 
         }
-        OsMatchers(os).is128Bit().wasReleaseIn(2013).hasVersion(9)
     }
 }

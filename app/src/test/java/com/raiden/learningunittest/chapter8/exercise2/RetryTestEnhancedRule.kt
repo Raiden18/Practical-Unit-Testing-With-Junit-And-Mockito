@@ -4,7 +4,7 @@ import org.junit.rules.TestRule
 import org.junit.runner.Description
 import org.junit.runners.model.Statement
 
-class RetryTestEnhancedRule : TestRule {
+public class RetryTestEnhancedRule : TestRule {
 
     private var errors = arrayOf<Throwable?>()
 
